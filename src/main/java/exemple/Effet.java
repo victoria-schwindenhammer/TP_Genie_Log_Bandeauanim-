@@ -11,16 +11,8 @@ import bandeau.Bandeau;
  *
  * @author victoria
  */
-public class DemiTour extends Effet{
-        public double anglederot = Math.PI;
-
-    public DemiTour() {
-    }
-        
+public class Effet {
     
-    @Override
-    public void EffectuerEffet(Bandeau b) {
-        b.setRotation(anglederot);
-    }  
+    public void EffectuerEffet(Bandeau b){}
     
 }

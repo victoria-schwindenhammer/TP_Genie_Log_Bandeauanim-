@@ -12,11 +12,17 @@ import java.awt.Color;
  *
  * @author victoria
  */
-public class ChangerCouleurCaracteres {
+public class ChangerCouleurCaracteres extends Effet{
     public Color couleur;
+
+    public ChangerCouleurCaracteres(Color couleur) {
+        this.couleur = couleur;
+    }
     
     
-    public void EffectuerEffetChangeCouleur(Bandeau b) {
+    
+    @Override
+    public void EffectuerEffet(Bandeau b) {
         if (b.getForeground()==couleur) {}
         else {
             b.setForeground(couleur);

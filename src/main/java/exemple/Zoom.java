@@ -11,11 +11,17 @@ import java.awt.Font;
  *
  * @author victoria
  */
-public class Zoom {
-    public int zoom;
+public class Zoom extends Effet {
+    public float zoom;
+
+    public Zoom(float zoom) {
+        this.zoom = zoom;
+    }
     
     
-    public void EffectuerEffetZoom(Bandeau b){
+    
+    @Override
+    public void EffectuerEffet(Bandeau b){
         b.getFont().deriveFont(b.getFont().getSize() *zoom);   
     }
        
