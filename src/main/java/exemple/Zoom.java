@@ -22,7 +22,7 @@ public class Zoom extends Effet {
     
     @Override
     public void EffectuerEffet(Bandeau b){
-        b.getFont().deriveFont(b.getFont().getSize() *zoom);   
+        b.setFont(b.getFont().deriveFont(b.getFont().getSize() *zoom));   
     }
        
     
